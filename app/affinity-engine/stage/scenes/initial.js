@@ -3,6 +3,6 @@ import { task } from 'ember-concurrency';
 
 export default Scene.extend({
   start: task(function * (script) {
-    script.text('Welcome to the Affinity Engine!');
+    yield script.text('Welcome to the Affinity Engine!');
   })
 });
